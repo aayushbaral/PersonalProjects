@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #include <iostream>
 #include "Vector3D.h"
@@ -44,5 +45,16 @@ int main() {
     Options::cameraFOV = 52;
 
     firstScene.render(400,400);
+=======
+#include <iostream>
+#include "ImageOutput.h"
+
+using namespace std;
+
+int main() {
+    ImageOutput *myImage = new ImageOutput();
+    uint8_t colors[] = {25, 120, 25, 2};
+    myImage->draw(200, 200, colors, "image.bmp");
+>>>>>>> 032e94aa29a84150216fda26b3822892ce649ed6
     return 0;
 }
