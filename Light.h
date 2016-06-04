@@ -8,7 +8,7 @@
 
 #include "Color.h"
 #include "Vector3D.h"
-
+//Light as an abstract base class
 class Light {
 protected:
     Color colorOfLight;
@@ -17,7 +17,7 @@ public:
     Light(Color _colorOfLight){
         colorOfLight = _colorOfLight;
     }
-    virtual const Vector3D getDirection(Vector3D intersectionPoint) = 0;
+    virtual Vector3D getDirection(Vector3D intersectionPoint) = 0;
     Color getColorOfLight(){
         return colorOfLight;
     }

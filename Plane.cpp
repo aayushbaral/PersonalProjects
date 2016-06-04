@@ -8,6 +8,7 @@
 const Color Plane::getColor() {
     return colorOfplane;
 }
+//Getting ray intersection distance
 const double Plane::getIntersectionDistance(Ray r){
     double a = normal.dotProduct(r.getDirection());
     if (a == 0) return -1;

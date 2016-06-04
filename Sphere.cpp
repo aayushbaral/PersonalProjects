@@ -1,12 +1,11 @@
 //
 // Created by click on 3/27/2016.
 //
-#include "Ray.h"
+
 #include "Sphere.h"
-#include "Vector3D.h"
 #include <iostream>
 
-
+//Matrix matrix;
 const Color Sphere::getColor() {
     return colorOfSphere;
 }
@@ -40,6 +39,9 @@ const double Sphere::getIntersectionDistance(Ray r) {
 }
 const Vector3D Sphere::getNormalFor(Vector3D intersectionPoint) {
     return (intersectionPoint - getCenter()).unitVector();
+
+
 }
+
 
 

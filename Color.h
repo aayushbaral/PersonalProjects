@@ -1,7 +1,7 @@
 //
 // Created by click on 3/27/2016.
 //
-
+#pragma once
 #ifndef RAYTRACER_COLOR_H
 #define RAYTRACER_COLOR_H
 #include <cmath>
@@ -14,7 +14,7 @@ private:
     double b;
     double g;
     double a;
-    double rgba[4];
+
 public:
     //Empty Constructor
     Color(){};
@@ -57,6 +57,7 @@ public:
         return (uint8_t)(floor)(pow(getA(),(0.5 * 2)) * 255);
     }
 };
+//Operator overloading for this class
 
 inline Color operator+(const Color &col1, const Color &col2) {
     return Color(col1.getR() + col2.getR(), col1.getB() + col2.getB() , col1.getG() + col2.getG(), col1.getA() + col2.getA());
@@ -70,6 +71,9 @@ inline Color operator*(const Color &col1, double t){
 //color * color
 inline Color operator*(const Color &col1, const Color &col2){
     return Color(col1.getR() * col2.getR(), col1.getB() * col2.getB(), col1.getG() * col2.getG(), col1.getA() * col2.getA());
+}
+inline Color operator/(const Color &col1, const double t){
+    return Color(col1.getR() / t, col1.getB() / t, col1.getG() / t, col1.getA() /t );
 }
 
 #endif //RAYTRACER_COLOR_H

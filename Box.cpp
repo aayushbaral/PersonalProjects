@@ -25,9 +25,6 @@ const double Box::getIntersectionDistance(Ray r) {
 
     if((txMin > tyMax) || (tyMin > txMax)) return -1;
     if (tyMin > t)  t = tyMin;
-//    if(tyMax < txMax)  txMax = tyMax;
-
-
     if ((txMin > tzMax) || (tzMin > txMax)) return -1;
     if ((tyMin > tzMax) || (tzMin > tyMax)) return -1;
     if (tzMin > t) t = tzMin;

@@ -14,28 +14,32 @@
       <sourceFolder url="file://$MODULE_DIR$/DirectionalLight.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Disk.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Disk.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/EasyBMP.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/EasyBMP.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EasyBMP/EasyBMP.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EasyBMP/EasyBMP.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ImageOutput.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ImageOutput.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Light.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Light.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Matrix.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Matrix.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Matrix3X3.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Matrix3X3.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Options.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Options.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Plane.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Plane.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PointLight.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PointLight.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Ray.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Ray.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Scene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Scene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Shadow.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Shadow.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Shape.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sphere.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sphere.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Triangle.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Triangle.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector3D.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Vector3D.h" isTestSource="false" />
     </content>

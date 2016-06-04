@@ -4,6 +4,10 @@
 
 #ifndef RAYTRACER_VECTOR3D_H
 #define RAYTRACER_VECTOR3D_H
+#include <vector>
+#include "Matrix.h"
+
+using namespace std;
 
 
 class Vector3D {
@@ -39,15 +43,21 @@ public:
     }
 
     //Constructor for this class
-    Vector3D(double _x, double _y, double _z);
+    Vector3D(double, double, double);
     Vector3D () {};
-    Vector3D unitVector();
+    const Vector3D unitVector();
 
     double magnitudeOfVector();
 
     Vector3D crossProduct(Vector3D &vec1);
 
     const double dotProduct(const Vector3D &vec1) const;
+    Matrix vectorToMatrix(Vector3D a)const;
+    Matrix pointToMatrix(Vector3D a)const;
+    Vector3D matrixTovector(vector<vector<double>>);
+
+
+
 };
 
 

@@ -7,11 +7,13 @@
 
 
 #include "Light.h"
+//Using Light as an abstract base class
 
 class DirectionalLight : public Light {
 private:
     Vector3D directionOfLight;
 public:
+    //setting the constructor to color black
     DirectionalLight():Light(Color(0, 0, 0, 0)){};
     DirectionalLight(Vector3D _direction, Color _colorOfLight):Light(colorOfLight){
         directionOfLight = _direction;
@@ -21,7 +23,7 @@ public:
     Vector3D getDirection(){
         return directionOfLight.unitVector();
     }
-    const Vector3D getDirection(Vector3D intersectionPoint){
+    Vector3D getDirection(Vector3D intersectionPoint){
         return getDirection();
     }
 

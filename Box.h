@@ -15,12 +15,14 @@ private:
     Color colorOfBox;
 public:
 
-    Box():Shape(0){};
-    Box(float _ambience, Vector3D _minBound, Vector3D _maxBound,Color _colorOfBox): Shape(ambience){
+    Box():Shape(){};
+    Box(float _ambience, float _diffusedCoefficient, float  _specularCoefficient, Vector3D _minBound, Vector3D _maxBound,Color _colorOfBox): Shape(ambience, diffusedCoefficient, specularCoefficient){
         ambience = _ambience;
         minBound = _minBound;
         maxBound = _maxBound;
         colorOfBox = _colorOfBox;
+        diffusedCoefficient = _diffusedCoefficient;
+        specularCoefficient = _specularCoefficient;
 
     }
     const Color getColor();

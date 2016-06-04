@@ -9,8 +9,9 @@ const Color Disk::getColor() {
     return colorofDisk;
 
 }
+//Getting ray intersection distance for disk
 const double Disk::getIntersectionDistance(Ray r) {
-    Plane myPlane(ambience, normal, center, Color());
+    Plane myPlane(ambience,diffusedCoefficient, specularCoefficient,  normal, center, Color());
     double t = myPlane.getIntersectionDistance(r);
     if (t == -1) return -1;
     Vector3D intersectionPoint = r.getOrigin() + r.getDirection() * t;

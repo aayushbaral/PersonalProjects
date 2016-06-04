@@ -16,6 +16,7 @@ private:
     Vector3D directionOfShadow;
 private:
     Shadow(){};
+    //Constructor for shadow
     Shadow(Vector3D _origin, Vector3D _direction){
         originOfShadow = _origin;
         directionOfShadow = _direction;
@@ -26,3 +27,4 @@ private:
 
 
 #endif //RAYTRACER_SHADOW_H
+

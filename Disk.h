@@ -15,13 +15,15 @@ private:
     double radius;
     Color colorofDisk;
 public:
-    Disk():Shape(0){};
-    Disk(Vector3D _normal, Vector3D _center, double _radius, Color _colorofDisk, float _ambience):Shape(ambience){
+    Disk():Shape(){};
+    Disk(Vector3D _normal, Vector3D _center, double _radius, Color _colorofDisk, float _ambience, float _diffusedCoefficient, float _specularCoefficient):Shape(ambience,diffusedCoefficient, specularCoefficient ){
         normal = _normal;
         center = _center;
         radius = _radius;
         colorofDisk = _colorofDisk;
         ambience = _ambience;
+        diffusedCoefficient = _diffusedCoefficient;
+        specularCoefficient = _specularCoefficient;
     }
     const Vector3D getNormalFor(Vector3D intersectionPoint);
 //Getters

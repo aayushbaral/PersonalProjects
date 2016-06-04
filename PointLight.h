@@ -19,8 +19,10 @@ public:
         originOfLight = _origin;
     }
 
-const Vector3D getDirection(Vector3D intersectionPoint) {
-    return (intersectionPoint - getOrigin()).unitVector();
+ Vector3D getDirection(Vector3D intersectionPoint) {
+    Vector3D diff =  (intersectionPoint - getOrigin());
+     Vector3D normalized = diff.unitVector();
+     return normalized;
 
 }
     Vector3D getOrigin(){

@@ -6,6 +6,7 @@
 #define RAYTRACER_OPTIONS_H
 
 #include "Vector3D.h"
+//This class initialises cameraPosition, CameraLookAt and cameraFov
 class Options{
 
     Options(){

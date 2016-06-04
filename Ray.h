@@ -4,24 +4,35 @@
 
 #ifndef RAYTRACER_RAY_H
 #define RAYTRACER_RAY_H
+#include <vector>
+#include <cmath>
 #include "Vector3D.h"
 
+using namespace std;
 
 class Ray {
 private:
+ Vector3D origin;
     Vector3D direction;
-    Vector3D origin;
 public:
-    Ray(const Vector3D _o, const Vector3D _d);
-    Ray(){};
-//Getters for this class
-    Vector3D getOrigin(){
+
+    Ray(const Vector3D &origin, const Vector3D &direction) : origin(origin), direction(direction) { }
+    Ray(): origin(Vector3D()), direction(Vector3D()){}
+    const Vector3D &getOrigin() const {
         return origin;
     }
-    Vector3D getDirection(){
-        return  direction;
+
+    void setOrigin(const Vector3D &origin) {
+        Ray::origin = origin;
     }
 
+    const Vector3D &getDirection(){
+        return direction;
+    }
+
+    void setDirection(const Vector3D &direction) {
+        Ray::direction = direction;
+    }
 };
 
 

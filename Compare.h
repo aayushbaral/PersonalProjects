@@ -11,6 +11,9 @@ class Compare {
 public:
     Compare(){};
     static int findthepositionofMinValueofT(std::map<int, double> myMap);
+    double randomNumberGenerator();
+    double anyRandomGenerator(double _minvalue, double _maxvalue);
+
 
 
 
